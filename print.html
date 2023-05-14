@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      font-size: 16px;
+      line-height: 24px;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      color: #555;
+      /* background-image: url(./../../images/logo-img.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; */
+    }
+
+    #DivIdToPrint {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      height: 100vh;
+      color: black;
+    }
+
+    .print-logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .table_border tr td {
+      border: 1px solid #555 !important;
+    }
+  </style>
+</head>
+
+<body onload="window.print()">
+  <div id="DivIdToPrint">
+    <!-- start invoice print -->
+    <div class="print-logo">
+      <img src="./images/logo-img.png" style="height: auto; width: 80px;" alt="logo" />
+    </div>
+    <!-- parent table -->
+    <table cellpadding="0" cellspacing="0">
+
+      <!-- child table -->
+      <table style="border: 0; width: 100%">
+
+        <tr>
+          <td colspan="3" align="center">
+            <b>Higher-Up Printing</b>
+            <!-- <img src="./images/logo-img.png" style="height: auto; width: 80px; align-self: flex-end;" alt="logo" /> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3" align="center"># 117 Trancoville M. Roxas St., Baguio City</td>
+        </tr>
+
+        <tr>
+          <td colspan="3" align="center"><b>Contact:</b> +63939-443-0708</td>
+        </tr>
+
+        <tr>
+          <td><br /><br /></td>
+        </tr>
+
+        <tr>
+          <td><b>Customer Name:</b> Sample Name</td>
+          <td colspan="3" align="right"><b>Bill No.:</b> # 12345</td>
+        </tr>
+
+        <tr>
+          <td><b>Mob.No:</b> 09123456789</td>
+        </tr>
+
+        <tr>
+          <td colspan="3" align="center">
+            <h3>INVOICE</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td><br /></td>
+        </tr>
+
+        <tr class="heading" style="background: #eee; border-bottom: 1px solid #ddd; font-weight: bold">
+          <td align="left">Product</td>
+          <td align="justify">Quantity / Size</td>
+          <td align="right">Amount</td>
+        </tr>
+
+        <tr class="itemrows">
+          <td align="left">DFT T-Shirt Printing</td>
+          <td align="justify">10Pcs</td>
+          <td align="right">₱2,000</td>
+        </tr>
+
+        <tr class="total">
+          <td align="left"></td>
+          <td align="justify"></td>
+          <td align="right">
+            <b>Grand&nbsp;Total&nbsp;:&nbsp;₱2,000</b>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 15vh" colspan="3" align="center">Thank You ! Visit Again</td>
+        </tr>
+
+        <!-- end of child table -->
+      </table>
+
+      <!-- end ofparent table -->
+    </table>
+
+    <!-- end invoice print -->
+  </div>
+</body>
+
+</html>

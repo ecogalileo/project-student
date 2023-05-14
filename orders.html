@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higher-Up Printing</title>
+    <link
+      rel="shortcut icon"
+      href="./images/title-logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- ----linked font awesome cdn---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ----linked style.css file---- -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <!-- ----linked media.css file---- -->
+    <link rel="stylesheet" href="./public/css/media.css" />
+  </head>
+  
+  <body>
+
+    <!-- ====markup header element==== -->
+    <header class="header">
+      <!-- ---header logo--- -->
+      <div class="header-logo">
+        <img src="./images/logo-img.png" alt="logo" />
+        <h1 style="padding-left: 20px;">Higher-Up Printing</h1>
+      </div>
+
+      <!-- ---navigation--- -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="admin.html">Customers</a>
+          </li>
+          <li>
+            <a class="active" href="orders.html">Orders</a>
+          </li>
+          <li>
+            <a href="index.html">Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ---menu bar--- -->
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <!-- ====markup main element==== -->
+
+    <main>
+
+      <h1 class="table-title">Order List</h1>
+
+      <div class="center">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Product</th>
+              <th>Quantity / Size</th>
+              <th>Price</th>
+              <th>Features</th>
+              <th>Date of Pickup</th>
+              <th width="15%">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Testing Name 1</td>
+              <td>DFT T-Shirt Print</td>
+              <td>10Pcs</td>
+              <td>₱2,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Testing Name 2</td>
+              <td>Sublimation Heat Press</td>
+              <td>5Pcs</td>
+              <td>₱1,500</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Testing Name 3</td>
+              <td>DFT T-Shirt Print</td>
+              <td>20Pcs</td>
+              <td>₱4,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Testing Name 4</td>
+              <td>Tarpulin Print</td>
+              <td>10ft</td>
+              <td>₱1,300</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Testing Name 5</td>
+              <td>Sublimation Heat Press</td>
+              <td>30Pcs</td>
+              <td>₱9,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Testing Name 6</td>
+              <td>Acrylic Buil-Up Signage</td>
+              <td>20Pcs</td>
+              <td>₱5,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Testing Name 7</td>
+              <td>Acrylic Buil-Up Signage</td>
+              <td>15Pcs</td>
+              <td>₱3,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Testing Name 8</td>
+              <td>DFT T-Shirt Print</td>
+              <td>10Pcs</td>
+              <td>₱2,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Testing Name 9</td>
+              <td>DFT T-Shirt Print</td>
+              <td>10Pcs</td>
+              <td>₱2,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Testing Name 10</td>
+              <td>Tarpulin Print</td>
+              <td>20ft</td>
+              <td>₱4,000</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laudantium animi necessitatibus quis rerum odio autem repellat sunt molestias itaque hic, nemo officiis similique, sed porro. Nulla, laborum! Natus!</td>
+              <td>May 25, 2023</td>
+              <td>
+                <a href="print.html" class="button" target="_blank">Print Receipt</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
